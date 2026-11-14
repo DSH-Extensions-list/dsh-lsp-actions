@@ -1,5 +1,24 @@
 # Changelog
 
+## [0.5.20] - 2026-11-13
+
+### Changed
+
+- Dependency hygiene: `@types/node` 26.6.5 -> 26.6.6 and `oxlint` 1.89.0 -> 1.91.0, with `pnpm-lock.yaml` re-resolved (dependabot #34).
+- Documentation: the five READMEs follow the family layout (badges, intro, five languages), carry a dedicated hero and the semantic flow diagram, and link the plugin toolchain.
+
+No runtime, API, or behaviour change in this release.
+
+## [0.5.18] - 2026-11-05
+
+### Changed
+
+- **Host 0.2.2 line support.** devDependencies move from 0.2.1-rc.2 to 0.2.2-rc.1, cordis to 4.1.0 / include 1.1.0 / loader 1.1.0, and schemastery to ~3.19.0 so a single copy resolves against `@deepseek-ai/dsh-llm` 0.2.2. `engines.dsh` appends `>=0.2.2-0 <0.3.0` (append-only) and `engines.node` becomes `^22.19.0 || >=24.9.0`.
+
+### Fixed
+
+- Add `@deepseek-ai/dsh-package-manifest`: `@deepseek-ai/dsh-llm` 0.2.2's published types import it but its manifest does not declare it.
+
 ## [0.5.17] - 2026-10-23
 
 ### Fixed
@@ -64,7 +83,7 @@ All notable changes to dsh-lsp-actions are documented here. The format follows
 - Correct the release date in the previous section, which was stamped with the literal string `undefined` by the release stamper. No content or behaviour change; the version is bumped only because npm will not republish an existing version.
 
 
-## [Unreleased]
+## [0.5.19] - 2026-11-05
 
 ## [0.5.9] - 2026-10-05
 
